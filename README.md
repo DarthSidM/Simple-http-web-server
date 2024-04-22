@@ -34,20 +34,12 @@ This is a basic HTTP web server implemented in C. It serves static HTML content 
     ./http_server
     ```
 
-4. The server will automatically determine the IP address associated with a specified network interface (e.g., `"eth0"`, `"wlan0"`). It will bind to this IP address and start listening for incoming connections on port `8080`.
+4. To determine the IP-address of the local machine you will have to run `ifconfig` if on linux or unix machines and `ipconfig` if on windows machines in your terminal or command prompt respectively.  The server will run only on the local network. It will bind to this IP address and start listening for incoming connections on port `8080`.
 
 5. Access the server from a web browser or client application using the IP address and port number. For example:
 
     ```
     http://<server_ip>:8080
-    ```
-
-## Configuration
-
-- **Network Interface**: Modify the `interface_name` variable in the source code (`http_server.c`) to specify the network interface whose IP address the server should use.
-
-    ```c
-    char *interface_name = "eth0"; // Change this to the name of your network interface
     ```
 
 ## Limitations
