@@ -9,7 +9,7 @@
 
 int main() {
     FILE *html_data;
-    html_data = fopen("profile.html", "r");
+    html_data = fopen("index.html", "r");
 
     if (html_data == NULL) {
         perror("Error opening file");
