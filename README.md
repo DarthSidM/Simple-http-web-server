@@ -25,13 +25,13 @@ This is a basic HTTP web server implemented in C. It serves static HTML content 
 2. Compile the source code using a C compiler.
 
     ```bash
-    gcc web_server.c -o web_server
+    gcc http_server.c -o http_server
     ```
 
 3. Run the server executable.
 
     ```bash
-    ./web_server
+    ./http_server
     ```
 
 4. The server will automatically determine the IP address associated with a specified network interface (e.g., `"eth0"`, `"wlan0"`). It will bind to this IP address and start listening for incoming connections on port `8080`.
@@ -44,7 +44,7 @@ This is a basic HTTP web server implemented in C. It serves static HTML content 
 
 ## Configuration
 
-- **Network Interface**: Modify the `interface_name` variable in the source code (`web_server.c`) to specify the network interface whose IP address the server should use.
+- **Network Interface**: Modify the `interface_name` variable in the source code (`http_server.c`) to specify the network interface whose IP address the server should use.
 
     ```c
     char *interface_name = "eth0"; // Change this to the name of your network interface
@@ -60,7 +60,7 @@ Contributions to the project are welcome. You can contribute by submitting bug r
 
 ## License
 
-This software is released under the [MIT License](LICENSE).
+This software is released under the [  GNU GENERAL PUBLIC LICENSE](LICENSE).
 
 ---
 
