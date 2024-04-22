@@ -4,8 +4,7 @@
 
 # Simple C HTTP Web Server
 
-This is a basic HTTP web server implemented in C. It serves static HTML content to clients over the local network and dynamically determines the IP address associated with a specified network interface.
-
+This is a basic HTTP web server implemented in C. It serves static HTML content to clients over the local network.
 ## Features
 
 - Serves static HTML content over HTTP.
